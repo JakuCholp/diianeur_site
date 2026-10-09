@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>diianeur — курсы по созданию AI-контента с нуля</title>
+  <meta name="description" content="Научу создавать AI-контент с нуля: от первой идеи и персонажа до готового видео — прямо с телефона. Два тарифа, личная поддержка.">
+  <meta name="theme-color" content="#f4fcfe">
+  <meta property="og:title" content="diianeur — AI-контент с нуля">
+  <meta property="og:description" content="От первой идеи и персонажа до готового видео — прямо с телефона.">
+  <meta property="og:image" content="assets/hero.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="wrap header__in">
+    <a class="logo" href="#top" aria-label="diianeur">dii<span>a</span><em>neur</em></a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#courses">Курсы</a>
+      <a href="#need">Что понадобится</a>
+      <a href="#about">Обо мне</a>
+    </nav>
+    <a class="btn btn--small" href="#courses">Выбрать курс</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 1. Первый экран -->
+  <section class="hero">
+    <div class="wrap hero__in">
+      <div class="hero__text">
+        <p class="eyebrow">AI-контент с нуля</p>
+        <h1>Ты придумываешь историю — <em>нейросети помогают ей ожить.</em></h1>
+        <p class="lead">Научу создавать AI-контент с нуля: от первой идеи и персонажа до готового видео — прямо с телефона.</p>
+        <a class="btn" href="#courses">Выбрать курс</a>
+        <ul class="tags">
+          <li>С нуля</li>
+          <li>С телефона</li>
+          <li>Пошагово</li>
+          <li>С моей поддержкой</li>
+        </ul>
+      </div>
+      <figure class="hero__photo">
+        <img src="assets/hero.jpg" alt="diianeur за работой над AI-контентом" width="1280" height="1066" fetchpriority="high">
+      </figure>
+    </div>
+  </section>
+
+  <!-- 2. Тарифы -->
+  <section class="section" id="courses">
+    <div class="wrap">
+      <header class="section__head reveal">
+        <p class="eyebrow">Два варианта обучения</p>
+        <h2>Выберите <em>свой</em> тариф</h2>
+      </header>
+
+      <div class="plans">
+        <article class="plan reveal">
+          <p class="plan__label">Базовый</p>
+          <p class="plan__for">Для тех, кто хочет начать создавать AI-контент с нуля.</p>
+          <p class="plan__note">Работаем на одном AI-агрегаторе. Обучение полностью с нуля, а я показываю на практике, как сама создаю контент.</p>
+          <ul class="list">
+            <li>Регистрация и настройка</li>
+            <li>Как пользоваться платформой</li>
+            <li>Создание изображений и видео</li>
+            <li>Как правильно составлять промпты</li>
+            <li>Готовый ролик и монтаж</li>
+            <li>Оформление контента, карточки, логотипы</li>
+            <li>Как вести Instagram</li>
+            <li>Стили и визуальное оформление</li>
+            <li>Другие нужные инструменты</li>
+          </ul>
+          <p class="plan__support"><strong>10 дней</strong> личной поддержки от меня</p>
+          <div class="plan__foot">
+            <p class="price">2 000 <span>сом</span></p>
+            <a class="btn btn--ghost" data-contact data-plan="Базовый" href="https://ig.me/m/diianeur">Выбрать базовый</a>
+          </div>
+        </article>
+
+        <article class="plan plan--premium reveal">
+          <p class="plan__badge">Всё включено</p>
+          <p class="plan__label">Премиум</p>
+          <p class="plan__for">Всё из базового курса + больше AI-инструментов и возможностей.</p>
+          <p class="plan__note">Вы работаете с разными платформами и видите мой собственный процесс работы — не теорию, а как всё делается на практике.</p>
+          <ul class="list">
+            <li><strong>Всё обучение из базового тарифа</strong></li>
+            <li>Higgsfield, Klyp, Flow, Grok, Syntx</li>
+            <li>Реалистичный формат AI-контента</li>
+            <li>Больше возможностей для видео и персонажей</li>
+            <li>Разные подходы и стили</li>
+            <li>Подробно: как вести Instagram, оформлять профиль и развивать свой AI-контент</li>
+          </ul>
+          <p class="plan__support"><strong>30 дней</strong> личной поддержки от меня</p>
+          <div class="plan__foot">
+            <p class="price">5 000 <span>сом</span></p>
+            <a class="btn" data-contact data-plan="Премиум" href="https://ig.me/m/diianeur">Выбрать премиум</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Что общего -->
+  <section class="section section--tint">
+    <div class="wrap narrow reveal">
+      <p class="eyebrow">В обоих тарифах</p>
+      <h2>Вы научитесь создавать <em>AI&#8209;контент</em></h2>
+      <ul class="pills">
+        <li>с нуля</li>
+        <li>пошагово</li>
+        <li>на практике</li>
+        <li>с телефона</li>
+        <li>с моей поддержкой</li>
+      </ul>
+      <p class="muted">Подходит даже тем, кто никогда раньше не работал с нейросетями.</p>
+    </div>
+  </section>
+
+  <!-- 4. Что понадобится -->
+  <section class="section" id="need">
+    <div class="wrap need">
+      <div class="reveal">
+        <p class="eyebrow">Что понадобится</p>
+        <h2>Только <em>телефон</em></h2>
+        <p class="lead lead--dark">Обучаться можно из любой страны.</p>
+      </div>
+      <div class="reveal">
+        <p class="need__title">Также понадобится</p>
+        <ul class="list list--plain">
+          <li>ChatGPT</li>
+          <li>Подписка на AI-платформу / агрегатор</li>
+          <li>CapCut или InShot для монтажа видео</li>
+        </ul>
+        <p class="fine">Стоимость сторонних подписок не входит в стоимость курса.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Поддержка -->
+  <section class="section section--tint">
+    <div class="wrap narrow reveal">
+      <p class="eyebrow">Поддержка</p>
+      <h2>Вы не останетесь один на один <em>с уроками</em></h2>
+      <p class="lead lead--dark">Я отвечаю на вопросы и помогаю разобраться в процессе.</p>
+      <div class="stats">
+        <div><b>10</b><span>дней поддержки<br>в базовом</span></div>
+        <div><b>30</b><span>дней поддержки<br>в премиуме</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Для кого -->
+  <section class="section">
+    <div class="wrap need">
+      <div class="reveal">
+        <p class="eyebrow">Для кого этот курс</p>
+        <h2>Для всех, кто хочет научиться создавать <em>AI&#8209;контент</em></h2>
+      </div>
+      <div class="reveal">
+        <p class="need__title">Неважно:</p>
+        <ul class="list list--plain">
+          <li>был ли у вас опыт с нейросетями</li>
+          <li>умеете ли вы монтировать</li>
+          <li>разбираетесь ли вы в AI</li>
+          <li>есть ли у вас компьютер</li>
+        </ul>
+        <p class="fine">Можно начать с нуля и обучаться прямо с телефона. Обучение доступно из любой страны.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Обо мне -->
+  <section class="section section--tint" id="about">
+    <div class="wrap about">
+      <figure class="about__photo reveal">
+        <img src="assets/about.jpg" alt="diianeur с графическим планшетом" width="760" height="1066" >
+      </figure>
+      <div class="about__text reveal">
+        <p class="eyebrow">Я покажу, как делаю сама</p>
+        <h2>Не просто рассказываю — <em>показываю, как делаю сама.</em></h2>
+        <p class="lead lead--dark">Весь процесс на практике: от идеи до готового ролика.</p>
+        <a class="btn" href="#courses">Выбрать курс</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <a class="logo" href="#top" aria-label="diianeur">dii<span>a</span><em>neur</em></a>
+    <a class="footer__link" data-contact href="https://ig.me/m/diianeur">Написать мне в Instagram</a>
+    <p>© <span id="year">2026</span> diianeur</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
