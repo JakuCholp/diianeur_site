@@ -8,7 +8,8 @@
   --white: #ffffff;
   --line: #d6eef3;
   --radius: 22px;
-  --serif: "Cormorant Garamond", "Georgia", serif;
+  --serif: "Playfair Display", "Georgia", serif;
+  --logo: "Gloock", "Playfair Display", serif;
   --sans: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 
@@ -39,13 +40,13 @@ h1, h2, .price, .stats b, .plan__label {
 h1, h2 {
   font-family: var(--serif);
   font-weight: 500;
-  line-height: 1.05;
+  line-height: 1.15;
   letter-spacing: -0.01em;
   margin: 0;
 }
-h1 { font-size: clamp(2.5rem, 7vw, 4.6rem); }
-h2 { font-size: clamp(2rem, 5vw, 3.2rem); }
-h1 em, h2 em { font-style: italic; color: var(--blue); }
+h1 { font-size: clamp(2.1rem, 6vw, 3.7rem); }
+h2 { font-size: clamp(1.7rem, 4.4vw, 2.6rem); }
+h1 em, h2 em { font-style: normal; color: var(--blue); }
 
 .eyebrow {
   font-size: 0.72rem;
@@ -92,7 +93,16 @@ h1 em, h2 em { font-style: italic; color: var(--blue); }
   border-bottom: 1px solid var(--line);
 }
 .header__in { display: flex; align-items: center; justify-content: space-between; gap: 20px; height: 68px; }
-.logo { font-family: var(--serif); font-size: 1.8rem; font-weight: 600; letter-spacing: -0.01em; line-height: 1; }
+.logo { position: relative; display: inline-block; font-family: var(--logo); font-size: 1.7rem; font-weight: 400; letter-spacing: -0.01em; line-height: 1; padding-bottom: 7px; }
+.logo::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  right: 6px;
+  bottom: 0;
+  height: 5px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 6' preserveAspectRatio='none'%3E%3Cpath d='M0 5.5C25 0.5 55 0.5 100 3' fill='none' stroke='%233b62a8' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+}
 .logo em { font-style: normal; color: var(--blue); }
 .logo span { color: var(--ink); }
 .nav { display: none; gap: 32px; font-size: 0.9rem; font-weight: 500; color: var(--ink-soft); }
@@ -146,7 +156,7 @@ h1 em, h2 em { font-style: italic; color: var(--blue); }
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
-.plan__label { font-family: var(--serif); font-size: 2.3rem; font-weight: 600; line-height: 1; }
+.plan__label { font-family: var(--serif); font-size: 2rem; font-weight: 600; line-height: 1; }
 .plan__for { margin-top: 14px; font-weight: 600; }
 .plan__note { margin-top: 10px; font-size: 0.95rem; color: var(--ink-soft); }
 .list { margin-top: 24px; display: grid; gap: 10px; }
@@ -175,7 +185,7 @@ h1 em, h2 em { font-style: italic; color: var(--blue); }
 }
 .plan--premium .plan__support { background: rgba(255, 255, 255, 0.75); }
 .plan__foot { margin-top: auto; padding-top: 30px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-.price { font-family: var(--serif); font-size: 2.8rem; font-weight: 600; line-height: 1; }
+.price { font-family: var(--serif); font-size: 2.4rem; font-weight: 600; line-height: 1; }
 .price span { font-family: var(--sans); font-size: 0.95rem; font-weight: 500; color: var(--ink-soft); }
 
 /* Общие плюсы */
