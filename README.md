@@ -3,7 +3,7 @@
 Статический сайт (HTML + CSS + JS), без сборки. Файлы: `index.html`, `styles.css`, `script.js`, `assets/`.
 
 ## Что поменять перед запуском
-- `script.js` → `CONTACT_URL`: ссылка, куда ведут кнопки «Выбрать ...» (WhatsApp / Telegram / Instagram).
+- `script.js` → `WHATSAPP_NUMBER` и `TELEGRAM_USERNAME`: контакты для кнопок «Выбрать ...» и подвала.
 - `index.html` → ссылка в подвале и `<title>`/описание при необходимости.
 
 ## Запуск на сервере (VPS + nginx)

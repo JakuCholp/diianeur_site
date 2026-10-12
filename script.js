@@ -1,16 +1,29 @@
 // ===== НАСТРОЙКИ =====
-// Куда ведут кнопки «Выбрать ...». Замените на свою ссылку (WhatsApp / Telegram / Instagram):
-//   WhatsApp:  https://wa.me/996XXXXXXXXX
-//   Telegram:  https://t.me/username
-//   Instagram: https://ig.me/m/username
-const CONTACT_URL = "https://ig.me/m/diianeur";
+// Номер для WhatsApp в международном формате, без + и пробелов (+996 551 909 999)
+const WHATSAPP_NUMBER = "996551909999";
+// Telegram: лучше указать username, например "username" -> https://t.me/username.
+// Пока ссылка идёт по номеру телефона (работает, только если в Telegram разрешён поиск по номеру).
+const TELEGRAM_USERNAME = "";
+const TELEGRAM_PHONE = "996551909999";
 // =====================
 
 document.documentElement.classList.add("js");
 document.getElementById("year").textContent = new Date().getFullYear();
 
 document.querySelectorAll("[data-contact]").forEach((a) => {
-  a.href = CONTACT_URL;
+  const plan = a.dataset.plan;
+  const text = plan
+    ? `Здравствуйте! Хочу пройти курс «${plan}».`
+    : "Здравствуйте! Хочу узнать подробнее о курсах.";
+  a.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+  a.target = "_blank";
+  a.rel = "noopener";
+});
+
+document.querySelectorAll("[data-telegram]").forEach((a) => {
+  a.href = TELEGRAM_USERNAME
+    ? `https://t.me/${TELEGRAM_USERNAME}`
+    : `https://t.me/+${TELEGRAM_PHONE}`;
   a.target = "_blank";
   a.rel = "noopener";
 });
