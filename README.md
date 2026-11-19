@@ -18,3 +18,8 @@
 4. HTTPS: `certbot --nginx -d example.com -d www.example.com`.
 
 Без своего сервера: Cloudflare Pages / Netlify / GitHub Pages — загрузить папку, подключить домен в настройках.
+
+## Важно при правках
+Cloudflare на домене кэширует CSS, JS и картинки в браузере на 4 часа. Поэтому при изменении `styles.css`, `script.js`
+или картинок меняйте номер версии в `index.html` (`styles.css?v=N`, `script.js?v=N`) либо называйте новые картинки новым именем.
+Постоянное решение: Cloudflare → домен → Caching → Configuration → Browser Cache TTL → Respect Existing Headers.
