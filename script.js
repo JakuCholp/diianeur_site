@@ -13,7 +13,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
 document.querySelectorAll("[data-contact]").forEach((a) => {
   const plan = a.dataset.plan;
   const text = plan
-    ? `Здравствуйте! Хочу пройти курс «${plan}».`
+    ? `Здравствуйте! Хочу записаться на обучение, тариф «${plan}».`
     : "Здравствуйте! Хочу узнать подробнее о курсах.";
   a.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
   a.target = "_blank";
