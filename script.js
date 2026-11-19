@@ -1,10 +1,9 @@
 // ===== НАСТРОЙКИ =====
 // Номер для WhatsApp в международном формате, без + и пробелов (+996 551 909 999)
 const WHATSAPP_NUMBER = "996551909999";
-// Telegram: лучше указать username, например "username" -> https://t.me/username.
-// Пока ссылка идёт по номеру телефона (работает, только если в Telegram разрешён поиск по номеру).
+// Telegram: укажите username без @, например "username" -> https://t.me/username.
+// Пока пусто, ссылка на Telegram в подвале скрыта.
 const TELEGRAM_USERNAME = "";
-const TELEGRAM_PHONE = "996551909999";
 // =====================
 
 document.documentElement.classList.add("js");
@@ -20,12 +19,13 @@ document.querySelectorAll("[data-contact]").forEach((a) => {
   a.rel = "noopener";
 });
 
+// Ссылка на Telegram показывается только когда указан username (ссылка по номеру телефона не работает).
 document.querySelectorAll("[data-telegram]").forEach((a) => {
-  a.href = TELEGRAM_USERNAME
-    ? `https://t.me/${TELEGRAM_USERNAME}`
-    : `https://t.me/+${TELEGRAM_PHONE}`;
+  if (!TELEGRAM_USERNAME) return;
+  a.href = `https://t.me/${TELEGRAM_USERNAME}`;
   a.target = "_blank";
   a.rel = "noopener";
+  a.hidden = false;
 });
 
 const items = document.querySelectorAll(".reveal");
