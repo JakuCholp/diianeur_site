@@ -187,17 +187,6 @@ h1 em, h2 em { font-style: normal; color: var(--blue); }
 .price-old { font-size: 1.15rem; color: var(--ink-soft); }
 .price-old s { text-decoration-thickness: 1.5px; }
 .price-block { display: grid; gap: 4px; }
-.price-save {
-  justify-self: start;
-  margin-top: 6px;
-  padding: 4px 12px;
-  border-radius: 999px;
-  background: var(--aqua);
-  color: var(--ink);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-}
 
 /* Индивидуальный тариф: самый заметный */
 .plan--pro {
